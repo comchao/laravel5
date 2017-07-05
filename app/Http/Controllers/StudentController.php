@@ -13,9 +13,9 @@ class StudentController extends Controller
         $students = student :: join('classview','classview.stu_id' ,'=','student.stu_id')
             ->select('student.stu_id','classview.class_id')
             ->where('student.stu_id', 1)->get();
-        dd($students);
 
-       /* return  response() ->json([$students]);*/
+
+        return  response() ->json([$students]);
 
 
 
