@@ -15,7 +15,7 @@ class StudentController extends Controller
             ->where('student.stu_id', 1)->get();
         dd($students);
 
-        return  response() ->json([$students]);
+       /* return  response() ->json([$students]);*/
 
 
 
